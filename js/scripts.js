@@ -15,3 +15,14 @@ let pokemonList = [
     types: ['flying','normal'],
   },
 ];
+// For to list Pokemon names and heights
+for (let i = 0; i < pokemonList.length; i++) {
+  document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ')');
+
+//Conditional to print " - Wow, that's big!" if height is over 1
+  if (pokemonList[i].height > 1) {
+    document.write(" - Wow, that's big!");
+  }
+//Line break between each pokemon names
+  document.write('<br><br>')
+}

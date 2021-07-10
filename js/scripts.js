@@ -1,4 +1,14 @@
-let pokemonList = [
+let pokemonRepository = (function () {
+let pokemonList = [];
+return {
+    add: function(item) {
+      pokemonList.push(item);
+    },
+    getAll: function() {
+      return pokemonList;
+    }
+  };
+})();
   {
     name: 'Beedrill',
     height: 1,

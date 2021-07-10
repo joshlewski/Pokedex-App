@@ -9,24 +9,27 @@ return {
     }
   };
 })();
+pokemonRepository.add (
   {
     name: 'Beedrill',
     height: 1,
     types: ['bug','poison'],
-  },
+  });
+pokemonRepository.add (
   {
     name: 'Parasect',
     height: 1,
     types: ['grass','bug'],
-  },
+  });
+pokemonRepository.add (
   {
     name: 'Dodrio',
     height: 1.8,
     types: ['flying','normal'],
-  },
-];
-// For to list Pokemon names and heights
-pokemonList.forEach(function(pokemon) {
+  });
+console.log(pokemonRepository.getAll());//puts the array into the console to be called
+// forEach to list Pokemon names and heights
+pokemonRepository.getAll().forEach(function(pokemon) {
   document.write(pokemon.name + ' (height: ' + pokemon.height + ')');
 
 //Conditional to print " - Wow, that's big!" if height is over 1
